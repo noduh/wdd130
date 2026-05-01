@@ -2,7 +2,29 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+  font-family: "Comico";
+  src:  url("../../fonts/comico/Comico-Regular.woff2") format("woff2"),
+        url("../../fonts/comico/Comico-Regular.woff") format("woff"),
+        url("../../fonts/comico/Comico-Regular.ttf") format("ttf"),
+        url("../../fonts/comico/Comico-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gak Tahu";
+  src:  url("../../fonts/gak_tahu/gak_tahu-webfont.woff2") format("woff2"),
+        url("../../fonts/gak_tahu/gak_tahu-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sloval";
+  src:  url("../../fonts/sloval/sloval-webfont.woff2") format("woff2"),
+        url("../../fonts/sloval/sloval-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   /* change the values below to your colors from your palette */
@@ -12,7 +34,7 @@ Fonts are separated by a & */
   background-color: #FBF5F3;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon";
+  --heading-font: "";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
