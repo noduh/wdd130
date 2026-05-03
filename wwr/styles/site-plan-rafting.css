@@ -1,29 +1,44 @@
-
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
 @font-face {
-  font-family: "Comico";
-  src:  url("../../fonts/comico/Comico-Regular.woff2") format("woff2"),
-        url("../../fonts/comico/Comico-Regular.woff") format("woff"),
-        url("../../fonts/comico/Comico-Regular.ttf") format("ttf"),
-        url("../../fonts/comico/Comico-Regular.eot") format("eot");
+  font-family: "Merienda";
+  src:  url("../../fonts/merienda/merienda-regular-webfont.woff2") format("woff2"),
+        url("../../fonts/merienda/merienda-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gak Tahu";
-  src:  url("../../fonts/gak_tahu/gak_tahu-webfont.woff2") format("woff2"),
-        url("../../fonts/gak_tahu/gak_tahu-webfont.woff") format("woff");
+  font-family: "Merienda";
+  src:  url("../../fonts/merienda/merienda-bold-webfont.woff2") format("woff2"),
+        url("../../fonts/merienda/merienda-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Philosopher";
+  src:  url("../../fonts/philosopher/philosopher-regular-webfont.woff2") format("woff2"),
+        url("../../fonts/philosopher/philosopher-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Sloval";
-  src:  url("../../fonts/sloval/sloval-webfont.woff2") format("woff2"),
-        url("../../fonts/sloval/sloval-webfont.woff") format("woff");
+  font-family: "Philosopher";
+  src:  url("../../fonts/philosopher/philosopher-italic-webfont.woff2") format("woff2"),
+        url("../../fonts/philosopher/philosopher-italic-webfont.woff") format("woff");
   font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Philosopher";
+  src:  url("../../fonts/philosopher/philosopher-bold-webfont.woff2") format("woff2"),
+        url("../../fonts/philosopher/philosopher-bold-webfont.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: "Philosopher";
+  src:  url("../../fonts/philosopher/philosopher-bolditalic-webfont.woff2") format("woff2"),
+        url("../../fonts/philosopher/philosopher-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
 }
 
 :root {
