@@ -49,8 +49,8 @@
   background-color: #FBF5F3;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Merienda", Arial, sans-serif;
+  --paragraph-font: "Philosopher", Arial, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #396E94;  /* headlines on a white background */ 
