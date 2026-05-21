@@ -7,48 +7,87 @@
     <style>
       body {
         background-color: #e8eced;
+        font-family: Arial;
+        font-size: 0.5vi;
+        color: white;
       }
       #spotlight-box {
         background-image: url("images/christus.webp");
         background-color: blue;
-        border: 0.8vi solid black;
-        font-family: Arial;
-        aspect-ratio: 16 / 10;
-        width: 100%;
-        max-width: 80%;
+        border: 0.75vi solid black;
+        aspect-ratio: 14 / 11;
+        width: 90%;
         height: auto;
         min-width: 0;
         background-size: cover;
         border-radius: 3vi;
         overflow: hidden;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 2vi;
         margin: auto;
       }
       .spotlight {
         height: 8vi;
         aspect-ratio: 1;
         overflow: hidden;
-        border: 0.8vi solid white;
+        border: 0.75vi solid white;
         border-radius: 50%;
       }
       .spotlight img {
         width: 100%;
       }
+      #first-presidency {
+        font-size: 1.5em;
+        display: flex;
+      }
+      #first-presidency .spotlight {
+        height: 10vi;
+      }
+      #first-presidency #president {
+        height: 11vi;
+        order: 2;
+      }
+      #first-presidency #first-counselor {
+        order: 1;
+      }
+      #first-presidency #second-counselor {
+        order: 3;
+      }
+      #first-presidency h1 {
+        font-size: 4em;
+      }
+      #quorum-of-twelve {
+        font-size: 1em;
+      }
+      #quorum-of-twelve h1 {
+        font-size: 4em;
+      }
     </style>
   </head>
   <body>
     <div id="spotlight-box">
-      <div id="president" class="spotlight first-presidency">
-        <img src="images/oaks.webp" title="Dallin H. Oaks" alt="Oaks Photo" />
-      </div>
-      <div class="spotlight">
-        <img
-          src="images/uchtdorf.webp"
-          title="Dieter F. Dchtdorf"
-          alt="Uchtdorf Photo"
-        />
-      </div>
+      <section id="first-presidency">
+        <h1>First Presidency</h1>
+        <div id="president" class="spotlight">
+          <img src="images/oaks.webp" title="Dallin H. Oaks" alt="Oaks Photo" />
+        </div>
+        <div id="first-counselor" class="spotlight">
+          <img src="images/eyring.webp" title="Henry B. Eyring" alt="Eyring Photo">
+        </div>
+        <div id="second-counselor" class="spotlight">
+          <img src="images/christofferson.webp" title="D. Todd Christofferson" alt="Christofferson Photo">
+        </div>
+      </section>
+      <section id="quorum-of-twelve">
+        <h1>Quorum of the Twelve</h1>
+        <div class="spotlight">
+          <img
+            src="images/uchtdorf.webp"
+            title="Dieter F. Dchtdorf"
+            alt="Uchtdorf Photo"
+          />
+        </div>
+      </section>
     </div>
   </body>
 </html>
