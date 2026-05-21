@@ -1,14 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apostles Spotlights</title>
     <style>
-        /* Insert styles here */
+      body {
+        background-color: #e8eced;
+      }
+      #spotlight-box {
+        background-image: url("images/christus.webp");
+        background-color: blue;
+        border: 0.8vi solid black;
+        font-family: Arial;
+        aspect-ratio: 16 / 10;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+        min-width: 0;
+        background-size: cover;
+        border-radius: 3vi;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: auto;
+      }
+      .spotlight {
+        height: 8vi;
+        aspect-ratio: 1;
+        overflow: hidden;
+        border: 0.8vi solid white;
+        border-radius: 50%;
+      }
+      .spotlight img {
+        width: 100%;
+      }
     </style>
-</head>
-<body>
-    <!-- Insert HTML elements here -->
-</body>
+  </head>
+  <body>
+    <div id="spotlight-box">
+      <div id="president" class="spotlight first-presidency">
+        <img src="images/oaks.webp" title="Dallin H. Oaks" alt="Oaks Photo" />
+      </div>
+      <div class="spotlight">
+        <img
+          src="images/uchtdorf.webp"
+          title="Dieter F. Dchtdorf"
+          alt="Uchtdorf Photo"
+        />
+      </div>
+    </div>
+  </body>
 </html>
