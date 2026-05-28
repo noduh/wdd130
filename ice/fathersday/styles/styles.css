@@ -1,1 +1,230 @@
-/* Add your CSS here to style your father's day page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 8px rgba(255, 0, 150, 0.95), 0 10px 36px 0 rgba(0, 0, 0, 0.9);
+    }
+    50% {
+        box-shadow: 0 0 36px rgba(0, 200, 255, 1), 0 12px 56px 0 rgba(0, 0, 0, 1);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(255, 220, 0, 0.95), 0 10px 36px 0 rgba(0, 0, 0, 0.9);
+    }
+}
+
+@keyframes border-gradient {
+    0% {
+        border-color: rgba(255, 0, 150, 0.95);
+    }
+    50% {
+        border-color: rgba(0, 200, 255, 1);
+    }
+    100% {
+        border-color: rgba(255, 220, 0, 0.95);
+    }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes neon-pulse {
+    0% { text-shadow: 0 0 6px rgba(255,0,150,0.9), 0 0 18px rgba(0,200,255,0.7); transform: scale(1); }
+    50% { text-shadow: 0 0 20px rgba(0,200,255,1), 0 0 40px rgba(255,220,0,0.9); transform: scale(1.02); }
+    100% { text-shadow: 0 0 6px rgba(255,0,150,0.9), 0 0 18px rgba(0,200,255,0.7); transform: scale(1); }
+}
+
+body {
+    font-family: 'Courier New', 'Monaco', monospace;
+    background: radial-gradient(circle at 10% 10%, #00111a 0%, #000000 40%),
+                linear-gradient(180deg, #050006 0%, #000000 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(255, 0, 150, 0.95);
+    box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 1), 0 0 24px rgba(255, 0, 150, 0.7) inset;
+    animation: border-gradient 6s linear infinite;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    /* flashy multicolor text, no background glow */
+    background: linear-gradient(90deg, #ff0066, #ffcc00, #00e0ff, #66ff66);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    position: relative;
+    padding-bottom: 5px;
+    animation: gradientShift 3s linear infinite;
+}
+
+nav li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffff00, #ffffff);
+    transition: width 0.3s ease;
+}
+
+nav li:hover {
+    transform: translateY(-2px);
+    text-shadow: none;
+}
+
+nav li:hover::after {
+    width: 100%;
+}
+
+main {
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(0, 200, 255, 0.95);
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 1), 0 0 28px rgba(0, 200, 255, 0.6) inset;
+    animation: border-gradient 6s linear infinite;
+}
+
+h1 {
+    /* flashy animated gradient neon heading */
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ff0066, #ffcc00, #00e0ff, #66ff66);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 6s ease infinite, neon-pulse 3s ease-in-out infinite;
+    position: relative;
+}
+
+/* removed h1 underline */
+h1::after { display: none; }
+
+main img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 44px 0 rgba(0, 0, 0, 1), 0 0 18px rgba(255, 220, 0, 0.8);
+    border: 1px solid rgba(255, 220, 0, 0.95);
+}
+
+section {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 220, 0, 0.95);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 44px rgba(255, 0, 150, 0.95), 0 16px 48px 0 rgba(0, 0, 0, 1);
+    border-color: rgba(0, 200, 255, 1);
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 0, 150, 0.9), 0 0 18px rgba(0, 200, 255, 0.8);
+}
+
+section p {
+    color: #fff8e6;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+section:hover h2 {
+    color: #ffff00;
+}
+
+footer {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 0, 150, 0.95);
+    box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 1), 0 0 20px rgba(255, 0, 150, 0.7) inset;
+    text-shadow: 0 0 8px rgba(255, 0, 150, 0.95), 0 0 14px rgba(0, 200, 255, 0.85);
+    animation: border-gradient 6s linear infinite;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 24px !important;
+    }
+
+    section p {
+        font-size: 14px !important;
+    }
+}
