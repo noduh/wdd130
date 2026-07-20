@@ -48,7 +48,10 @@ body {
 
     .logo {
         margin-right: auto;
-        height: calc(var(--navbar-height) - var(--default-padding));
+        img {
+            height: calc(var(--navbar-height) - var(--default-padding));
+            width: auto;
+        }
         padding-left: var(--default-padding);
     }
 
@@ -86,9 +89,17 @@ body {
             color: var(--text-color);
             vertical-align: middle;
             margin-right: var(--default-padding);
+            img {
+                height: calc(var(--navbar-height) - var(--default-padding));
+                width: auto;
+            }
 
             #close-hamburger {
                 display: none;
+                img {
+                    height: calc(var(--navbar-height) - var(--default-padding));
+                    width: auto;
+                }
             }
         }
         .hamburger:hover {
