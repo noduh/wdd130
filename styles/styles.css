@@ -7,6 +7,7 @@
     --navbar-height: 100px;
     --navbar-color: #FF10F0;
     --navlinks-color: light-dark(#00000033, #ffffff33);
+    --button-color: light-dark(#3B3B3B, #DBDBDB);
     --max-width-mobile: 870px;
     --default-padding: 30px;
 }
@@ -22,11 +23,17 @@
     padding: 0;
 }
 
+html {
+    font-size: 30px;
+}
+
 html, body {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'bytesized';
+    text-underline-offset: 0.2em;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -35,7 +42,35 @@ body {
     margin-top: var(--navbar-height);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'tiny5';
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.0rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1.125rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'bytesized';
+    font-size: 1rem;
+}
+
 .navbar {
+    font-family: 'tiny5';
     z-index: 100;
     position: fixed;
     top: 0;

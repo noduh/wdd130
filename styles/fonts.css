@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'tiny5regular';
+    font-family: 'tiny5';
     src: url('../fonts/tiny5-regular-webfont.woff2') format('woff2'),
          url('../fonts/tiny5-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'bytesizedregular';
+    font-family: 'bytesized';
     src: url('../fonts/bytesized-regular-webfont.woff2') format('woff2'),
          url('../fonts/bytesized-regular-webfont.woff') format('woff');
     font-weight: normal;
