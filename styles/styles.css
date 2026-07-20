@@ -2,12 +2,13 @@
 
 :root {
     color-scheme: light dark;
-    --bg-color: light-dark(white, dimgray);
-    --text-color: light-dark(black, white);
+    --bg-color: light-dark(#F2F2F2, #3B3B3B);
+    --text-color: light-dark(#000000, #F2F2F2);
     --navbar-height: 100px;
-    --navbar-color: light-dark(lightgray, black);
+    --navbar-color: #FF10F0;
+    --navlinks-color: light-dark(#00000033, #ffffff33);
     --max-width-mobile: 870px;
-    --default-padding: 10px;
+    --default-padding: 30px;
 }
 
 :target {
@@ -43,8 +44,9 @@ body {
     height: var(--navbar-height);
     flex-direction: row;
     align-items: center;
+    background-color: var(--navbar-color);
 
-    .nav-brand {
+    .logo {
         margin-right: auto;
         height: calc(var(--navbar-height) - var(--default-padding));
         padding-left: var(--default-padding);
@@ -62,11 +64,14 @@ body {
             text-align: right;
             overflow: auto;
             padding: var(--default-padding);
+            background-color: var(--navlinks-color);
+
             li {
                 margin-left: auto;
                 display: block;
                 list-style-type: none;
             }
+
             a {
                 text-decoration: none;
                 color: var(--text-color);
