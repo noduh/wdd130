@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'tiny5regular';
+    src: url('../fonts/tiny5-regular-webfont.woff2') format('woff2'),
+         url('../fonts/tiny5-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bytesizedregular';
+    src: url('../fonts/bytesized-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bytesized-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
