@@ -222,6 +222,7 @@ p {
 
 footer {
     margin-top: auto;
+    color: white;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -240,7 +241,7 @@ footer {
     }
 
     a {
-        color: var(--text-color);
+        color: white;
     }
 
     .copyright {
