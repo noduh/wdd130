@@ -270,23 +270,46 @@ footer {
 }
 
 .cards {
+    margin-top: 6rem;
     list-style: none;
+
+    img {
+        display: none;
+    }
 
     li {
         margin: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        position: relative;
+
         h3 {
+            z-index: 2;
+            position: relative;
             padding: 1rem;
             width: 100%;
             background-color: var(--card-color);
             color: var(--inverted-text-color);
         }
         p {
+            z-index: 2;
+            position: relative;
             padding: 1rem;
+            padding-top: 0;
             width: 100%;
             background-color: var(--card-color);
             color: var(--inverted-text-color);
         }
         @media (min-width: 871px) {
+            img {
+                display: flex;
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50vw;
+                height: auto;
+            }
             margin: 2rem;
             width: 40vw;
             margin-left: 10vw;
@@ -297,9 +320,15 @@ footer {
     @media (min-width: 871px) {
         li:nth-child(odd) {
             margin-right: auto;
+            img {
+                left: 30vw;
+            }
         }
         li:nth-child(even) {
             margin-left: auto;
+            img {
+                right: 30vw
+            }
         }
     }
 }
