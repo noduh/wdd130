@@ -268,3 +268,27 @@ footer {
         }
     }
 }
+
+.cards {
+    list-style: none;
+
+    li {
+        padding: 1rem;
+        margin: 1rem;
+        @media (min-width: 871px) {
+            margin: 2rem;
+            width: 40vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+    }
+
+    @media (min-width: 871px) {
+        li:nth-child(odd) {
+            margin-right: auto;
+        }
+        li:nth-child(even) {
+            margin-left: auto;
+        }
+    }
+}
